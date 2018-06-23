@@ -4,8 +4,6 @@ import java.util.List;
 public class Operadora {
     //TIPO classe Banco TP1
 
-    //Lista Planos
-    //Lista Celulares (Função find p/ ligação)
     private String nomeOp;
     private List<Celular> celulares;
     private List<Cliente> clientes;

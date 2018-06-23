@@ -8,7 +8,11 @@ public class PreP extends Celular{
     public PreP(String cpf){
         super(cpf);
         saldo = 0.0;
+
         //vencimento = HOJE;
+        Calendar cal_venc = Calendar.getInstance();
+        vencimento = Ligacao.cal2string(cal_venc);
+
     }
 
     public double getSaldo(){
@@ -17,6 +21,8 @@ public class PreP extends Celular{
 
     public void addSaldo(int money){
         saldo = saldo + money;
+
+        //validade = HOJE + 180 dias;
         Calendar aux =Calendar.getInstance();
         aux.add(Calendar.DAY_OF_MONTH, +180);
         //Seta para inicio do dia
@@ -24,7 +30,6 @@ public class PreP extends Celular{
         aux.set(Calendar.MINUTE, 0);
         aux.set(Calendar.SECOND, 0);
         vencimento = Ligacao.cal2string(aux);
-        //validade = HOJE + 180 dias;
     }
 
     public String getDadosCelular(){

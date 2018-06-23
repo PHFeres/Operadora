@@ -20,6 +20,8 @@ public class Ligacao {
         return cal2string(dataL);
     }
 
+    public Calendar get_data_calen(){ return dataL;}
+
     public void setdataL(String dataL) {
         this.dataL = string2cal(dataL);
     }

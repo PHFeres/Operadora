@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Celular {
@@ -46,19 +47,36 @@ public class Celular {
         return ligacoes;
     }
 
+    public List<Ligacao> getLigacoes(String inicio)
+    {
+        List<Ligacao> retorno = new ArrayList<Ligacao>();
+
+        Calendar cal_inicio = Ligacao.string2cal(inicio);
+        for(Ligacao aux: ligacoes)
+        {
+            if (aux.get_data_calen().compareTo(cal_inicio) > 0)
+            {
+                retorno.add(aux);
+            }
+
+        }
+
+        return retorno;
+    }
+
     public void setLigacao(Ligacao l){
         ligacoes.add(l);
     };
 
-    public void ligacao(String data, float duracao, long destino) throws Exception {
-        //TODO tratar excecao, se pa melhor na operadora
-        Ligacao l = new Ligacao(data, duracao, destino);
-        setLigacao(l);
-    }
+
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
     //                                  FUNÇÕES DECLARAÇÃO
     /////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void ligacao(String data, float duracao, long destino) throws Exception {
+
+    }
 
     public double getSaldo(){
         return -1;
