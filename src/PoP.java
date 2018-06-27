@@ -48,6 +48,7 @@ public class PoP extends Celular
     public void ligacao(String data, float duracao, long destino)
     {
         Ligacao l = new Ligacao(data, duracao, destino);
-        super.setLigacao(l);
+        setLigacao(l);
+        //super.setLigacao(l);
     }
 }

@@ -35,7 +35,7 @@ public class PreP extends Celular{
     public String getDadosCelular(){
         String p = "Saldo: " + saldo + "\nValidade: " + vencimento;
         return p;
-    };
+    }
 
     public String getVencimento() {
         return vencimento;
@@ -45,12 +45,17 @@ public class PreP extends Celular{
         return "Celular Pré-Pago";
     }
 
+
+    //TODO adicionar hora
     public void ligacao(String data, float duracao, long destino) throws Exception
     {
         double preco = this.getPrecoPlano()*duracao;
         Calendar val = Ligacao.string2cal(vencimento);
         Calendar dateCal = Ligacao.string2cal(data);
-        if(preco>saldo){ //Verificar vencimento
+
+        //excecao nao testada
+        if(preco>saldo)
+        { //Verificar vencimento
             throw new Exception("Saldo insuficiente");
         }
         else if (val.compareTo(dateCal)>0)

@@ -16,6 +16,9 @@ public class Celular {
     public Celular(String cpf){
         cpfCliente = cpf;
         ligacoes = new ArrayList<Ligacao>();
+        numero = proxNumero;
+        proxNumero++;
+       // proxNumero = proxNumero + 1;
     }
 
     public String getCliente(){

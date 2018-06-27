@@ -7,6 +7,7 @@ public class Operadora {
     private String nomeOp;
     private List<Celular> celulares;
     private List<Cliente> clientes;
+
     private List<Plano> planos;
 
     public Operadora (String nome)
@@ -39,6 +40,10 @@ public class Operadora {
 
     public void setClientes(List<Cliente> clientes) {
         this.clientes = clientes;
+    }
+
+    public List<Plano> getPlanos() {
+        return planos;
     }
 
     public void addCliente(String nome, String id, String ender) throws CliException
@@ -109,5 +114,11 @@ public class Operadora {
 
 
     }
+
+    //TODO funçao adiquirir celular: passar cliente e plano como parametro
+
+    //TODO metodo excluir celular, verificar casos de exceçao
+
+    //TODO comparar data atual com data de vencimento creditos e fatura
 
 }

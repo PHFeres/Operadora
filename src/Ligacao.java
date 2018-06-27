@@ -4,11 +4,12 @@ import java.util.Calendar;
 
 public class Ligacao {
 
+
     private Calendar dataL;
     private long nDestino;
     private float duracao;
 
-
+    //TODO pegar hora da ligacao tbm
     public Ligacao(String date, float dur, long num)
     {
         duracao = dur;
