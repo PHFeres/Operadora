@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 public class Ligacao {
 
-
+    //TODO adicionar campo valor
     private Calendar dataL;
     private long nDestino;
     private float duracao;
