@@ -77,7 +77,7 @@ public class Celular {
     //                                  FUNÇÕES DECLARAÇÃO
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public void ligacao(String data, float duracao, long destino) throws Exception {
+    public void ligacao(String data, float duracao, long destino, int hora, int minuto) throws Exception {
 
     }
 
@@ -87,7 +87,10 @@ public class Celular {
 
     public String getType (){
         return "";
-    };
+    }
+
+    //retorna 1 para pos pago e 2 para pre pago
+    public int getType_int() {return 0;}
 
 
     public void addSaldo(int money){
@@ -96,9 +99,23 @@ public class Celular {
 
     public String getDadosCelular(){
         return "";
-    };
+    }
 
     public String getVencimento() {
         return "";
     }
+
+    public List fatura_mes() {
+        return null;
+    }
+
+    public double total_fatura(List<Ligacao> l) {
+        return 0;
+    }
+
+    public void verifica_venc()
+    {
+
+    }
+
 }

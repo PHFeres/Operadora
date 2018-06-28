@@ -91,7 +91,7 @@ public class Operadora {
 
     }
 
-    public void liga (long origem, String data, float duracao, long destino) throws Exception
+    public void liga (long origem, String data, float duracao, long destino, int hora, int minuto) throws Exception
     {
         try
         {
@@ -99,7 +99,7 @@ public class Operadora {
             find(destino);  //apenas para lancar excecao
             try
             {
-                ori.ligacao(data, duracao, destino);
+                ori.ligacao(data, duracao, destino, hora, minuto);
             }
             catch (Exception e)
             {
@@ -115,9 +115,70 @@ public class Operadora {
 
     }
 
+    public void addSaldo(long num, int money) throws Exception
+    {
+        try
+        {
+            Celular c = find(num);
+            if(c.getType_int() == 2)
+            {
+                c.addSaldo(money);
+            }
+            else
+            {
+                throw new Exception("Nao é possivel adicionar creditos num celular pos pago");
+            }
+        }
+        catch (CliException c_ex)
+        {
+            c_ex.printStackTrace();
+        }
+
+
+
+    }
+
     //TODO funçao adiquirir celular: passar cliente e plano como parametro
 
-    //TODO metodo excluir celular, verificar casos de exceçao
+
+    public void del_celular(long num) throws CelException
+    {
+        try
+        {
+            Celular c = find(num);
+            if(c.getType_int() == 1) //pos pago
+            {
+                List l = c.fatura_mes();
+                double val = c.total_fatura(l);
+                if (val == 0)   //pode excluir
+                {
+                    celulares.remove(c);
+                }
+                else
+                {
+                    throw new CelException(num, 0);
+                }
+            }
+            else //pre pago
+            {
+                double saldo = c.getSaldo();
+                if(saldo == 0)
+                {
+                    celulares.remove(c);
+                }
+                else
+                {
+                    throw new CelException(num, 0);
+                }
+
+            }
+        }
+        catch (CelException c_ex)
+        {
+            c_ex.printStackTrace();
+        }
+    }
+
 
     //TODO comparar data atual com data de vencimento creditos e fatura
 

@@ -4,17 +4,19 @@ import java.util.Calendar;
 
 public class Ligacao {
 
-    //TODO adicionar campo valor
+    private double valor;    //facilita trabalho da interface
     private Calendar dataL;
     private long nDestino;
     private float duracao;
 
     //TODO pegar hora da ligacao tbm
-    public Ligacao(String date, float dur, long num)
+    public Ligacao(String date, float dur, long num, int hora, int minuto, double val)
     {
         duracao = dur;
         dataL = string2cal(date);
         nDestino = num;
+        dataL.set(Calendar.HOUR_OF_DAY, hora);
+        dataL.set(Calendar.MINUTE, minuto);
     }
 
     public String getdataL() {

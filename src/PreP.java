@@ -46,8 +46,13 @@ public class PreP extends Celular{
     }
 
 
+    public int getType_int (){
+        return 2;
+    }
+
+
     //TODO adicionar hora
-    public void ligacao(String data, float duracao, long destino) throws Exception
+    public void ligacao(String data, float duracao, long destino, int hora, int minuto) throws Exception
     {
         double preco = this.getPrecoPlano()*duracao;
         Calendar val = Ligacao.string2cal(vencimento);
@@ -64,8 +69,20 @@ public class PreP extends Celular{
         }
         else {
             saldo = saldo - preco;
-            Ligacao l = new Ligacao(data, duracao, destino);//Passar data e duração como parametros
+            Ligacao l = new Ligacao(data, duracao, destino, hora, minuto, preco);//Passar data e duração como parametros
             setLigacao(l);
         }
+    }
+
+    public void verifica_venc()
+    {
+        Calendar aux = Calendar.getInstance();
+        Calendar cal_vencimento = Ligacao.string2cal(vencimento);
+
+        if (aux.compareTo(cal_vencimento) > 0)      //ja passou da data de vencimento
+        {
+            System.out.println("Celular" + this.getNumero() + "com creditos vencido");
+        }
+
     }
 }

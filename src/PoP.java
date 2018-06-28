@@ -45,10 +45,28 @@ public class PoP extends Celular
     }
 
     @Override
-    public void ligacao(String data, float duracao, long destino)
+    public int getType_int() {
+        return 1;
+    }
+
+    @Override
+    public void ligacao(String data, float duracao, long destino, int hora, int minuto)
     {
-        Ligacao l = new Ligacao(data, duracao, destino);
+        double preco = this.getPrecoPlano()*duracao;
+        Ligacao l = new Ligacao(data, duracao, destino, hora, minuto, preco);
         setLigacao(l);
         //super.setLigacao(l);
     }
+
+    public void verifica_venc()
+    {
+        Calendar aux = Calendar.getInstance();
+
+        if (aux.compareTo(vencimento) > 0)      //ja passou da data de vencimento
+        {
+            System.out.println("Celular" + this.getNumero() + "com fatura vencida");
+        }
+
+    }
+
 }
