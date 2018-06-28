@@ -17,6 +17,7 @@ public class Ligacao {
         nDestino = num;
         dataL.set(Calendar.HOUR_OF_DAY, hora);
         dataL.set(Calendar.MINUTE, minuto);
+        valor = val;
     }
 
     public String getdataL() {
