@@ -182,6 +182,8 @@ public class Interface
         System.out.println("[7] Listar planos");
         System.out.println("[8] Conferir saldo");
         System.out.println("[9] Excluir celular");
+        System.out.println("[10] Adicionar saldo");
+
 
         System.out.println("[0] Encerrar aplicação");
 
