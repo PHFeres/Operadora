@@ -40,8 +40,17 @@ public class Celular {
     }
 
     //Tratar erro de leitura de plano sem plano cadastrado
-    public String getNomePlano(){
-        return plano.getNome();
+    public String getNomePlano() throws Exception
+    {
+        if(plano == null)
+        {
+            throw new Exception("Celular ainda sem plano");
+        }
+        else
+        {
+            return plano.getNome();
+        }
+
     }
 
     public double getPrecoPlano(){

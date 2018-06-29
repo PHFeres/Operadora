@@ -110,13 +110,14 @@ public class Operadora {
         Cliente c = find(cpf);
         PreP cel = new PreP(c);
 
-
+        celulares.add(cel);
     }
 
     public void addPoP(String cpf, Calendar data_venc) throws Exception {
         Cliente c = find(cpf);
         PoP cel = new PoP(c, data_venc);
 
+        celulares.add(cel);
     }
 
 

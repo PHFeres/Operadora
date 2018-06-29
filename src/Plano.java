@@ -17,7 +17,7 @@ public class Plano {
     }
 
     public String getPlano(){
-        String p = "Plano: " + Nome + "\nValor por minuto: " + valorMinuto;
+        String p = "Plano: " + Nome + "\tValor por minuto: " + valorMinuto;
         return p;
     }
 

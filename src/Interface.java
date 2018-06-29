@@ -83,10 +83,10 @@ public class Interface
 
     public void add_plano()
     {
-        System.out.print("Digite o nome do plano:");
+        System.out.print("Digite o nome do plano: ");
         String nome = in.next();
 
-        System.out.println("Digite o valor por minuto: ");
+        System.out.print("Digite o valor por minuto: ");
         double val = in.nextDouble();
 
         try {
@@ -128,11 +128,18 @@ public class Interface
     public void list_celulares()
     {
         List <Celular> l = op.getCelulares();
-        System.out.println("\tCPF\tTipo\tDono\tPlano\n");
+        System.out.println("\tNúmero\tTipo\tDono\tPlano\n");
 
         for (Celular c : l)
         {
-            System.out.println("\t" + c.getNumero() + "\t" + c.getType() + "\t" + c.getCliente().getName() + "\t" + c.getNomePlano());
+            System.out.print("\t" + c.getNumero() + "\t" + c.getType() + "\t" + c.getCliente().getName() + "\t");
+            try {
+                 System.out.println(c.getNomePlano());
+            } catch (Exception e)
+            {
+                System.out.println("Sem plano");
+                e.printStackTrace();
+            }
         }
 
     }
@@ -195,6 +202,7 @@ public class Interface
                 break;
             case 3:
                 add_plano();
+                break;
             case 4:
                 assinar_plano();
                 break;
