@@ -7,23 +7,21 @@ public class Celular {
     //Tipo: PreP, PoP
     //Plano
 
-    private String cpfCliente;
+    //private String cpfCliente;
+    Cliente cliente;
     private long numero;
     private static long proxNumero = 10000000; //INICIALIZAR COM MENOR VALOR, 8 DIGITOS?
     private Plano plano;
     private List<Ligacao> ligacoes;
 
-    public Celular(String cpf){
-        cpfCliente = cpf;
+    public Celular(Cliente c){
+        cliente = c;
         ligacoes = new ArrayList<Ligacao>();
         numero = proxNumero;
         proxNumero++;
        // proxNumero = proxNumero + 1;
     }
 
-    public String getCliente(){
-        return cpfCliente;
-    }
 
     public long getNumero(){
         return numero;

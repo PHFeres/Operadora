@@ -1,5 +1,6 @@
 
 public class Main {
+
     public static void main(String [] args){
 
 //        Plano p = new Plano("plan", 2.2);
@@ -14,26 +15,27 @@ public class Main {
 //        System.out.println(pp.getSaldo());
 
 
-        Operadora op = new Operadora("oi");
-
-
-        try {
-            op.addPlano("Fidelidade", 1);
-
-            op.addPlano("Fidelidade", 10);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        try
-        {
-            op.addCliente("Pedro", "123", "PE");
-            op.addCliente("ashson", "123", "UFMG");
-        }
-        catch (CliException e)
-        {
-            //System.out.println(e.getMessage() + e.getCpf());
-            e.printStackTrace();
-        }
+//        Operadora op = new Operadora("oi");
+//
+//
+//        try {
+//            op.addPlano("Fidelidade", 1);
+//
+//            op.addPlano("Fidelidade", 10);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        try
+//        {
+//            op.addCliente("Pedro", "123", "PE");
+//            op.addClienteIn("ashson", "123", "UFMG");
+//        }
+//        catch (CliException e)
+//        {
+//            //System.out.println(e.getMessage() + e.getCpf());
+//            e.printStackTrace();
+//        }
+        Interface i = new Interface();
 
     }
 }

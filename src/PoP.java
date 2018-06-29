@@ -8,9 +8,9 @@ public class PoP extends Celular
 
 
     //ao criar passar dataF com o ano certo, o proximo mes, e o dia escolhido
-    public PoP(String cpf, String dataF)
+    public PoP(Cliente c, String dataF)
     {
-        super(cpf);
+        super(c);
 
         Calendar aux = Ligacao.string2cal(dataF);
 

@@ -5,8 +5,8 @@ public class PreP extends Celular{
     private double saldo;
     private String vencimento;
 
-    public PreP(String cpf){
-        super(cpf);
+    public PreP(Cliente c){
+        super(c);
         saldo = 0.0;
 
         //vencimento = HOJE;

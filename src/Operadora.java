@@ -78,6 +78,46 @@ public class Operadora {
         planos.add(p);
     }
 
+    public Cliente find(String cpf) throws Exception {
+        Cliente c = new Cliente("", cpf, "");
+        for(Cliente aux: clientes)
+        {
+            if(c.compareC(aux))
+            {
+                return aux;
+            }
+        }
+
+        throw new Exception("Cliente não existe");
+    }
+
+    public void addPreP(String cpf)
+    {
+        try {
+            Cliente c = find(cpf);
+            PreP cel = new PreP(c);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void addPoP(String cpf, String data_venc)
+    {
+        try {
+            Cliente c = find(cpf);
+            PoP cel = new PoP(c, data_venc);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+
+
     public Celular find(long num)throws CelException
     {
         for(Celular aux: celulares)
