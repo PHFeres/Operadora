@@ -47,6 +47,20 @@ public class Operadora {
         return planos;
     }
 
+    public double getSaldo(long num) throws Exception {
+        Celular c = find(num);
+
+        if(c.getType_int() == 1)
+        {
+            throw new Exception("Não se pode olhar saldo de um celular pós pago.");
+        }
+        else
+        {
+            return c.getSaldo();
+        }
+
+    }
+
     public void addCliente(String nome, String id, String ender) throws CliException
     {
         Cliente c = new Cliente(nome, id, ender);
@@ -185,9 +199,6 @@ public class Operadora {
 
     }
 
-    //TODO funçao adiquirir celular: passar cliente e plano como parametro
-
-
     public void del_celular(long num) throws CelException
     {
         try
@@ -225,6 +236,7 @@ public class Operadora {
             c_ex.printStackTrace();
         }
     }
+
 
 
     //TODO comparar data atual com data de vencimento creditos e fatura

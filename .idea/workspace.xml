@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf1b346-828c-47a5-b6e6-33180105475b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/Celular.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/Celular.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/Ligacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/Ligacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/Operadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/Operadora.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/PoP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/PoP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2/PreP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2/PreP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Celular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Celular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operadora.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +21,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="323">
               <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-              <folding>
-                <element signature="e#72#115#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -35,10 +30,12 @@
       <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="530">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,8 +44,8 @@
       <file leaf-file-name="Plano.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Plano.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="22" />
+            <state relative-caret-position="289">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,13 +62,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operadora.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Operadora.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Operadora.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="109" column="34" lean-forward="true" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+            <state relative-caret-position="360">
+              <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Operadora#0;class#Operadora#0" />
+                <element signature="method#addCliente#0;class#Operadora#0" />
+                <element signature="method#addPlano#0;class#Operadora#0" />
+                <element signature="method#find#0;class#Operadora#0" />
+                <element signature="method#addPreP#0;class#Operadora#0" />
+                <element signature="method#addPoP#0;class#Operadora#0" />
+                <element signature="method#find#1;class#Operadora#0" />
+                <element signature="method#find_plano#0;class#Operadora#0" />
+                <element signature="method#assina_plano#0;class#Operadora#0" />
+                <element signature="method#liga#0;class#Operadora#0" />
+                <element signature="method#addSaldo#0;class#Operadora#0" />
+                <element signature="method#del_celular#0;class#Operadora#0" />
               </folding>
             </state>
           </provider>
@@ -80,12 +89,10 @@
       <file leaf-file-name="PoP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PoP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="-255">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,24 +101,28 @@
       <file leaf-file-name="Celular.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Celular.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="612">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2384#2385#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interface.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Interface.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="-168">
+              <caret line="156" column="29" lean-forward="true" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#add_cliente#0;class#Interface#0" />
+                <element signature="method#add_celular#0;class#Interface#0" />
+                <element signature="method#add_plano#0;class#Interface#0" />
+                <element signature="method#list_celulares#0;class#Interface#0" />
               </folding>
             </state>
           </provider>
@@ -133,22 +144,23 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cliente.java" />
         <option value="$PROJECT_DIR$/src/CliException.java" />
         <option value="$PROJECT_DIR$/src/Plano.java" />
         <option value="$PROJECT_DIR$/src/CelException.java" />
         <option value="$PROJECT_DIR$/src/Ligacao.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Interface.java" />
-        <option value="$PROJECT_DIR$/src/Celular.java" />
         <option value="$PROJECT_DIR$/src/PreP.java" />
         <option value="$PROJECT_DIR$/src/PoP.java" />
+        <option value="$PROJECT_DIR$/src/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/Celular.java" />
         <option value="$PROJECT_DIR$/src/Operadora.java" />
+        <option value="$PROJECT_DIR$/src/Interface.java" />
       </list>
     </option>
   </component>
@@ -162,8 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -181,10 +191,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -320,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530239186642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Desenvolvendo menuzim">
+      <created>1530243642628</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530243642628</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -336,12 +356,12 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32972136" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2647059" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21052632" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Jelastic" order="10" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31164902" />
       <window_info id="Learn" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -356,36 +376,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972136" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972136" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32972136" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
-      <window_info id="Learn" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32817337" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Jelastic" order="10" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32817337" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -421,7 +411,8 @@
     <MESSAGE value="Especificações (TODOs)" />
     <MESSAGE value="Acabei tarefinhas" />
     <MESSAGE value="Começando menuzim" />
-    <option name="LAST_COMMIT_MESSAGE" value="Começando menuzim" />
+    <MESSAGE value="Desenvolvendo menuzim" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desenvolvendo menuzim" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Operadora.java">
@@ -430,6 +421,18 @@
           <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Operadora#0;class#Operadora#0" />
+            <element signature="method#addCliente#0;class#Operadora#0" />
+            <element signature="method#addPlano#0;class#Operadora#0" />
+            <element signature="method#find#0;class#Operadora#0" />
+            <element signature="method#addPreP#0;class#Operadora#0" />
+            <element signature="method#addPoP#0;class#Operadora#0" />
+            <element signature="method#find#1;class#Operadora#0" />
+            <element signature="method#find_plano#0;class#Operadora#0" />
+            <element signature="method#assina_plano#0;class#Operadora#0" />
+            <element signature="method#liga#0;class#Operadora#0" />
+            <element signature="method#addSaldo#0;class#Operadora#0" />
+            <element signature="method#del_celular#0;class#Operadora#0" />
           </folding>
         </state>
       </provider>
@@ -464,8 +467,8 @@
           <caret line="55" column="55" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,6 +503,8 @@
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -524,8 +529,8 @@
           <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -546,6 +551,18 @@
           <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Operadora#0;class#Operadora#0" />
+            <element signature="method#addCliente#0;class#Operadora#0" />
+            <element signature="method#addPlano#0;class#Operadora#0" />
+            <element signature="method#find#0;class#Operadora#0" />
+            <element signature="method#addPreP#0;class#Operadora#0" />
+            <element signature="method#addPoP#0;class#Operadora#0" />
+            <element signature="method#find#1;class#Operadora#0" />
+            <element signature="method#find_plano#0;class#Operadora#0" />
+            <element signature="method#assina_plano#0;class#Operadora#0" />
+            <element signature="method#liga#0;class#Operadora#0" />
+            <element signature="method#addSaldo#0;class#Operadora#0" />
+            <element signature="method#del_celular#0;class#Operadora#0" />
           </folding>
         </state>
       </provider>
@@ -570,6 +587,8 @@
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -594,8 +613,8 @@
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,6 +644,18 @@
           <caret line="12" column="1" selection-start-line="12" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Operadora#0;class#Operadora#0" />
+            <element signature="method#addCliente#0;class#Operadora#0" />
+            <element signature="method#addPlano#0;class#Operadora#0" />
+            <element signature="method#find#0;class#Operadora#0" />
+            <element signature="method#addPreP#0;class#Operadora#0" />
+            <element signature="method#addPoP#0;class#Operadora#0" />
+            <element signature="method#find#1;class#Operadora#0" />
+            <element signature="method#find_plano#0;class#Operadora#0" />
+            <element signature="method#assina_plano#0;class#Operadora#0" />
+            <element signature="method#liga#0;class#Operadora#0" />
+            <element signature="method#addSaldo#0;class#Operadora#0" />
+            <element signature="method#del_celular#0;class#Operadora#0" />
           </folding>
         </state>
       </provider>
@@ -649,6 +680,8 @@
           <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -672,8 +705,8 @@
         <state>
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,6 +757,8 @@
           <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -741,8 +776,8 @@
           <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -794,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ligacao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,52 +839,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="530">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Plano.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="323">
           <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding>
-            <element signature="e#72#115#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface.java">
+    <entry file="file://$PROJECT_DIR$/src/Plano.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="22" />
           <folding>
-            <element signature="method#add_cliente#0;class#Interface#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Celular.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="612">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -863,22 +887,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PoP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="-255">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Operadora.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="109" column="34" lean-forward="true" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+        <state relative-caret-position="360">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Operadora#0;class#Operadora#0" />
+            <element signature="method#addCliente#0;class#Operadora#0" />
+            <element signature="method#addPlano#0;class#Operadora#0" />
+            <element signature="method#find#0;class#Operadora#0" />
+            <element signature="method#addPreP#0;class#Operadora#0" />
+            <element signature="method#addPoP#0;class#Operadora#0" />
+            <element signature="method#find#1;class#Operadora#0" />
+            <element signature="method#find_plano#0;class#Operadora#0" />
+            <element signature="method#assina_plano#0;class#Operadora#0" />
+            <element signature="method#liga#0;class#Operadora#0" />
+            <element signature="method#addSaldo#0;class#Operadora#0" />
+            <element signature="method#del_celular#0;class#Operadora#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="156" column="29" lean-forward="true" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#add_cliente#0;class#Interface#0" />
+            <element signature="method#add_celular#0;class#Interface#0" />
+            <element signature="method#add_plano#0;class#Interface#0" />
+            <element signature="method#list_celulares#0;class#Interface#0" />
           </folding>
         </state>
       </provider>

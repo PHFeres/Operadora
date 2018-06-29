@@ -23,6 +23,10 @@ public class Celular {
     }
 
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
     public long getNumero(){
         return numero;
     }
@@ -36,8 +40,8 @@ public class Celular {
     }
 
     //Tratar erro de leitura de plano sem plano cadastrado
-    public String getDadosPlano(){
-        return plano.getPlano();
+    public String getNomePlano(){
+        return plano.getNome();
     }
 
     public double getPrecoPlano(){

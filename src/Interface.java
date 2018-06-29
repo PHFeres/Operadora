@@ -1,5 +1,10 @@
+import java.io.IOException;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Scanner;
+
+import static java.lang.Boolean.FALSE;
+import static java.lang.Boolean.TRUE;
 
 public class Interface
 {
@@ -108,7 +113,54 @@ public class Interface
 
     }
 
-    public void opcoes()
+    public void list_clientes()
+    {
+        List <Cliente> l = op.getClientes();
+        System.out.println("\tCPF\tNome\tEndereço\n");
+
+        for (Cliente c : l)
+        {
+            System.out.println("\t" + c.getCpf_cnpj() + "\t" + c.getName() + "\t" + c.getEndereco());
+        }
+
+    }
+
+    public void list_celulares()
+    {
+        List <Celular> l = op.getCelulares();
+        System.out.println("\tCPF\tTipo\tDono\tPlano\n");
+
+        for (Celular c : l)
+        {
+            System.out.println("\t" + c.getNumero() + "\t" + c.getType() + "\t" + c.getCliente().getName() + "\t" + c.getNomePlano());
+        }
+
+    }
+
+    public void list_planos()
+    {
+        List <Plano> l = op.getPlanos();
+
+        for (Plano p : l)
+        {
+            System.out.println(p.getPlano());
+        }
+
+    }
+
+    public void ver_saldo()
+    {
+        System.out.println("Digite o numero do seu celular: ");
+        long num = in.nextLong();
+
+        try {
+            op.getSaldo(num);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean opcoes()
     {
         limpaTela();
 
@@ -124,6 +176,8 @@ public class Interface
         System.out.println("[8] Conferir saldo");
         System.out.println("[9] Excluir celular");
 
+        System.out.println("[0] Encerrar aplicação");
+
         System.out.print("Digite a opção desejada: ");
         int opcao = in.nextInt();
 
@@ -131,6 +185,8 @@ public class Interface
 
         switch (opcao)
         {
+            case 0:
+                return FALSE;   //indica fim de execução
             case 1:
                 add_cliente();
                 break;
@@ -141,11 +197,34 @@ public class Interface
                 add_plano();
             case 4:
                 assinar_plano();
+                break;
+            case 5:
+                list_clientes();
+                break;
+            case 6:
+                list_celulares();
+                break;
+            case 7:
+                list_planos();
+                break;
+            case 8:
+                ver_saldo();
+                break;
 
             default:
                 System.out.println("Opção invalida");
 
         }
+
+        System.out.println("\nPressione enter para continuar.");
+
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return TRUE;   //indica que execução deve continuar
 
     }
 
@@ -158,10 +237,7 @@ public class Interface
 
         op = new Operadora(nome_op);
 
-        opcoes();
-
-
-
+        while (opcoes());
 
     }
 
