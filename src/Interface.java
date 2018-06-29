@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Interface
@@ -42,18 +43,66 @@ public class Interface
         System.out.print("Gostaria de um celular: [1]pós-pago ou [2]pré-pago: ");
         int tipo = in.nextInt();
 
-        if (tipo == 1)
+        try
         {
-            System.out.print("Qual dia do mês deseja pagar a fatura: ");
-            int dia = in.nextInt();
+            if (tipo == 1)
+            {
+                System.out.print("Qual dia do mês deseja pagar a fatura: ");
+                int dia = in.nextInt();
+
+                Calendar aux = Calendar.getInstance();
+                aux.set(Calendar.DAY_OF_MONTH, dia);
+
+                if (dia < aux.get(Calendar.DAY_OF_MONTH))
+                {
+                    aux.add(Calendar.MONTH, +1);
+                }
+
+                op.addPoP(cpf, aux);
+
+            }
+            else if(tipo == 2)
+            {
+                op.addPreP(cpf);
+            }
+            else
+            {
+                System.out.println("Opção inválida!");
+            }
         }
-        else if(tipo == 2)
+        catch (Exception e)
         {
-            op.addPreP(cpf);
+            e.printStackTrace();
         }
-        else
-        {
-            System.out.println("Opção inválida!");
+    }
+
+    public void add_plano()
+    {
+        System.out.print("Digite o nome do plano:");
+        String nome = in.next();
+
+        System.out.println("Digite o valor por minuto: ");
+        double val = in.nextDouble();
+
+        try {
+            op.addPlano(nome, val);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void assinar_plano()
+    {
+        System.out.print("Digite o seu celular: ");
+        long c_num = in.nextLong();
+
+        System.out.print("Digite o nome do plano desejado: ");
+        String nome_p = in.next();
+
+        try {
+            op.assina_plano(c_num, nome_p);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
 
@@ -84,12 +133,15 @@ public class Interface
         {
             case 1:
                 add_cliente();
-
                 break;
             case 2:
                 add_celular();
-
                 break;
+            case 3:
+                add_plano();
+            case 4:
+                assinar_plano();
+
             default:
                 System.out.println("Opção invalida");
 

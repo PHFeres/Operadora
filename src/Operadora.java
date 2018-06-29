@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Operadora {
@@ -91,29 +92,17 @@ public class Operadora {
         throw new Exception("Cliente não existe");
     }
 
-    public void addPreP(String cpf)
-    {
-        try {
-            Cliente c = find(cpf);
-            PreP cel = new PreP(c);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+    public void addPreP(String cpf) throws Exception {
+        Cliente c = find(cpf);
+        PreP cel = new PreP(c);
+
 
     }
 
-    public void addPoP(String cpf, String data_venc)
-    {
-        try {
-            Cliente c = find(cpf);
-            PoP cel = new PoP(c, data_venc);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+    public void addPoP(String cpf, Calendar data_venc) throws Exception {
+        Cliente c = find(cpf);
+        PoP cel = new PoP(c, data_venc);
+
     }
 
 
@@ -128,7 +117,25 @@ public class Operadora {
             }
         }
         throw new CelException(num);
+    }
 
+    public Plano find_plano(String nome) throws Exception {
+        Plano p = new Plano(nome, 0);
+        for(Plano aux: planos)
+        {
+            if(aux.comparePlano(p))
+            {
+                return p;
+            }
+        }
+
+        throw new Exception("Plano não existe");
+    }
+
+    public void assina_plano(long num, String nome_p) throws Exception {
+        Celular c = find(num);
+        Plano p = find_plano(nome_p);
+        c.setPlano(p);
     }
 
     public void liga (long origem, String data, float duracao, long destino, int hora, int minuto) throws Exception
